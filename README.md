@@ -7,6 +7,10 @@ podman machine stop; podman machine start
 
 podman run -d --name="pdfchunker" -v "./incoming:/tmp/incoming" -v "./output:/tmp/output" blumareks/pdf-chunker:003
 
-podman run -d --name=pdfchunker -v /Users/marek/Documents/2023-ibm/eox/eox-pdf-chunker/pdf-chunker/incoming:/tmp/incoming blumareks/pdf-chunker:001
-
 ```
+
+## TODO:
+
+- parameters for `file name` and file `page number` per chunk passed to the container
+- trigger for starting the process FaaS / Code Engine
+- uploading results to a bucket in ICOS
