@@ -1,0 +1,4 @@
+incoming/*
+output/*
+.git
+*.pdf
